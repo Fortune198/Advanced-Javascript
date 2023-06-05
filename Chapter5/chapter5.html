@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5</title>
+</head>
+
+<body>
+    <script>
+        //Exercise 5.1
+
+        // let maxValue = 5;
+
+        // let guessWord = Math.floor(Math.random() * maxValue + 1);
+
+        // console.log(maxValue);
+
+        // let correctGuess = true;
+
+        // while (!correct) {
+        //     let guess = prompt("Guess a Number 1 - " + max);
+        //     guess = Number(guess);
+        //     if (guess === ranNumber) {
+        //         correct = true;
+        //         alert("You got it " + ranNumber);
+        //     } else if (guess > ranNumber) {
+        //         alert("Too high");
+        //     } else {
+        //         alert("Too Low");
+        //     }
+        // }
+
+
+        //Exercise 5.2
+
+        // let counter = 0;
+        // let step = 1;
+        // do {
+        //     counter += step;
+        //     alert(counter);
+        // }
+        // while (counter <= 100);
+
+        //Exercise 5.3
+
+        // let myWork = [];
+
+        // for (let object = 1; object < 10; object++) {
+        //     console.log("Lesson " + myWork.push(object));
+        // }
+
+        // const myWork = [];
+        // for (let x = 1; x < 10; x++) {
+        //     let stat = x % 2 ? true : false;
+        //     let temp = {
+        //         name: `Lesson ${x}`, status: stat
+        //     };
+        //     myWork.push(temp);
+        // }
+        // console.log(myWork);
+
+        // let arrOfArrays = [];
+        // for (let i = 0; i < 3; i++) {
+        //     arrOfArrays.push([]);
+        //     for (let j = 0; j < 7; j++) {
+        //         arrOfArrays[i].push(j);
+        //     }
+        // }
+
+        // console.table(arrOfArrays);
+
+        //Exercise 5.4
+
+        // let myTable = [];
+        // for (let x = 0; x < 3; x++) {
+        //     myTable.push([]);
+        //     for (let y = 0; y < 7; y++) {
+        //         myTable[x].push(y);
+        //     }
+        // }
+        // console.table(myTable);
+
+        // const myTable = [];
+        // const rows = 4;
+        // const cols = 7;
+        // let counter = 0;
+        // for (let y = 0; y < rows; y++) {
+        //     let tempTable = [];
+        //     for (let x = 0; x < cols; x++) {
+        //         counter++;
+        //         tempTable.push(counter);
+        //     }
+        //     myTable.push(tempTable);
+        // }
+        // console.table(myTable);
+
+        //Exercise 5.5
+
+        // const grid = [];
+        // const cells = 64;
+        // let counter = 0;
+        // let row;
+        // for (let x = 0; x < cells + 1; x++) {
+        //     if (counter % 8 == 0) {
+        //         if (row != undefined) {
+        //             grid.push(row);
+        //         }
+        //         row = [];
+        //     }
+        //     counter++;
+        //     let temp = counter;
+        //     row.push(temp);
+        // }
+        // console.table(grid);
+
+        //Exercise 5.6
+
+        // let emptyArr = [];
+        // for (let i = 0; i < 10; i++) {
+        //     emptyArr.push(i + 1);
+        // }
+        // console.log(emptyArr)
+
+        // for (let i = 0; i < emptyArr.length; i++) {
+        //     console.log(emptyArr[i]);
+        // }
+        // for (let val of emptyArr) {
+        //     console.log(val);
+        // }
+
+
+        //Exercise 5.7
+
+
+        // let dopePerson = {
+        //     name: "Fortune",
+        //     age: 24,
+        //     hobby: "coding"
+        // };
+
+        // for (let person in dopePerson) {
+        //     console.log(person, dopePerson[person]);
+        // }
+
+        // let newPerson = ["Fortune", 24, "coding"];
+
+        // for (let values of newPerson) {
+        //     console.log(values);
+        // }
+
+        //Corrections
+
+        // const obj = {
+        //     a: 1,
+        //     b: 2,
+        //     c: 3
+        // };
+        // for (let prop in obj) {
+        //     console.log(prop, obj[prop]);
+        // }
+        // const arr = ["a", "b", "c"];
+        // for (let w = 0; w < arr.length; w++) {
+        //     console.log(w, arr[w]);
+        // }
+        // for (el in arr) {
+        //     console.log(el, arr[el]);
+        // }
+
+        //Exercise 5.8
+
+        // let output = " ";
+
+        // let skippedNo = 5;
+
+        // for (let i = 0; i <= 10; i++) {
+        //     if (i == skippedNo) {
+        //         continue;
+        //     }
+        //     output += 1;
+        // };
+        // console.log(output);
+
+        // let output = "";
+        // let skipThis = 7;
+        // for (let i = 0; i < 10; i++) {
+        //     if (i === skipThis) {
+        //         continue;
+        //     }
+        //     output += i;
+        // }
+        // console.log(output);
+
+        // let output = "";
+        // let skipThis = 7;
+        // for (let i = 0; i < 10; i++) {
+        //     if (i === skipThis) {
+        //         break;
+        //     }
+        //     output += i;
+        // }
+        // console.log(output);
+
+        //Project
+
+        const myTable = [];
+        const numm = 10;
+        for (let x = 0; x < numm; x++) {
+            const temp = [];
+            for (let y = 0; y < numm; y++) {
+                temp.push(x * y);
+            }
+            myTable.push(temp);
+        }
+        console.table(myTable);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+
+[
+    {
+        "first": "Fortune",
+        "last": "Svekis",
+        "topic": "JavaScript"
+    },
+    {
+        "first": "Bonolo",
+        "last": "Smith",
+        "topic": "HTML"
+    },
+    {
+        "first": "Jane",
+        "last": "Doe",
+        "topic": "CSS"
+    }
+]

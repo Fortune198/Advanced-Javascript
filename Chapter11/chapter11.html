@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="welcome">Hi there!</div>
+    <form>
+        <input type="text" name="firstname" placeholder="First name" onchange="logEvent()" />
+        <input type="text" name="lastname" placeholder="Last name" onblur="logEvent()" />
+        <input type="button" onclick="sendInfo()" value="Submit" />
+    </form>
+    <script>
+        function logEvent() {
+            let p = event.target;
+            if (p.name == "firstname") {
+                message("First Name Changed to " + p.value);
+            } else {
+                message("Last Name Changed to " + p.value);
+            }
+        }
+        function sendInfo() {
+            let p = event.target.parentElement;
+            message("Welcome " + p.firstname.value + " " + p.lastname.
+                value);
+        }
+
+        function message(m) {
+document.getElementById("welcome").innerHTML = m;
+}
+</script>
+</body>
+</html>
+
+
+// <!doctype html>
+// <html>
+
+// <body>
+//     <div>yellow</div>
+//     <div>black</div>
+//     <div>green</div>
+//     <div>purple</div>
+
+//     <script>
+//         const divs = document.querySelectorAll("div");
+//         divs.forEach((el) => {
+//             el.addEventListener("click", () => {
+//                 document.body.style.backgroundColor = el.textContent;
+//             });
+//         })
+//     </script>
+
+    // <!-- <div id="divvy" onmouseover="changeColor()" style="width: 100px;
+// height: 100px; background-color: pink;">
+//         <script>
+//             function changeColor() {
+//                 document.getElementById("divvy").style.backgroundColor =
+//                     "blue";
+//             }
+//         </script>
+    //
+</body>
+</html-->

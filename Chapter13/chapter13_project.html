@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passwordChecker</title>
+</head>
+
+<body>
+
+    <script>
+
+        const allowed = ["2468", "myLead", "Tapdance"];
+        function passwordChecker(pass) {
+            return allowed.includes(pass);
+        }
+        function login(password) {
+            return new Promise((resolve, reject) => {
+                if (passwordChecker(password)) {
+                    resolve({
+                        status: true
+                    });
+                } else {
+                    reject({
+                        status: false
+                    });
+                }
+            });
+        }
+        function checker(pass) {
+            login(pass)
+                .then(token => {
+                    console.log("Approve:");
+                    console.log(token);
+                })
+                .catch(value => {
+                    console.log("Reject:");
+                    console.log(value);
+                })
+        }
+        checker("24681");
+        checker("myLead");
+
+    </script>
+</body>
+
+</html>
